@@ -1,0 +1,191 @@
+[
+  {
+    "serviceName": "Car Engine Overhaul",
+    "price": 15000,
+    "description": "Complete engine overhaul for better performance and longevity.",
+    "image": "uploads/car_engine_overhaul.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Engine Tuning",
+    "price": 5000,
+    "description": "Full engine tuning for optimal performance and fuel efficiency.",
+    "image": "uploads/bike_engine_tuning.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Clutch Repair",
+    "price": 3000,
+    "description": "Repair and replacement of worn-out clutch plates for smooth operation.",
+    "image": "uploads/auto_clutch_repair.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Battery Replacement",
+    "price": 7000,
+    "description": "Replacement of car battery with high-quality, long-lasting options.",
+    "image": "uploads/car_battery_replacement.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Chain Lubrication",
+    "price": 800,
+    "description": "Proper lubrication and tension adjustment for smooth riding.",
+    "image": "uploads/bike_chain_lubrication.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Brake Service",
+    "price": 2000,
+    "description": "Complete brake system checkup and pad replacement if needed.",
+    "image": "uploads/auto_brake_service.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car AC Servicing",
+    "price": 6000,
+    "description": "Cleaning, gas refill, and performance tuning of AC system.",
+    "image": "uploads/car_ac_servicing.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Suspension Check",
+    "price": 4000,
+    "description": "Inspection and tuning of front and rear suspension for smoother rides.",
+    "image": "uploads/bike_suspension_check.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Tire Replacement",
+    "price": 2500,
+    "description": "Replacement of worn-out tires with high-quality alternatives.",
+    "image": "uploads/auto_tire_replacement.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Dent Removal",
+    "price": 5000,
+    "description": "Professional dent removal service to restore car aesthetics.",
+    "image": "uploads/car_dent_removal.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Oil Change",
+    "price": 1200,
+    "description": "Oil change with high-performance lubricant for engine health.",
+    "image": "uploads/bike_oil_change.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Headlight Repair",
+    "price": 1500,
+    "description": "Replacement or repair of malfunctioning headlights.",
+    "image": "uploads/auto_headlight_repair.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Wheel Alignment",
+    "price": 3500,
+    "description": "Proper alignment to ensure smooth driving and prevent tire wear.",
+    "image": "uploads/car_wheel_alignment.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Carburetor Cleaning",
+    "price": 1800,
+    "description": "Cleaning and tuning of carburetor for better fuel efficiency.",
+    "image": "uploads/bike_carburetor_cleaning.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Body Painting",
+    "price": 8000,
+    "description": "Full body repainting for a fresh look.",
+    "image": "uploads/auto_body_painting.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Interior Cleaning",
+    "price": 4000,
+    "description": "Deep cleaning of seats, dashboard, and carpets.",
+    "image": "uploads/car_interior_cleaning.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Brake Pad Replacement",
+    "price": 2000,
+    "description": "Replacement of worn-out brake pads for better safety.",
+    "image": "uploads/bike_brake_pad_replacement.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Engine Oil Change",
+    "price": 1800,
+    "description": "Oil change using high-grade engine oil.",
+    "image": "uploads/auto_engine_oil_change.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Windshield Replacement",
+    "price": 10000,
+    "description": "Replacement of cracked or damaged windshields.",
+    "image": "uploads/car_windshield_replacement.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Clutch Plate Replacement",
+    "price": 2500,
+    "description": "Replacement of worn-out clutch plates for smooth gear shifts.",
+    "image": "uploads/bike_clutch_plate_replacement.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Seat Cover Replacement",
+    "price": 3000,
+    "description": "Replacement of old seat covers with durable ones.",
+    "image": "uploads/auto_seat_cover_replacement.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Fuel Injector Cleaning",
+    "price": 5000,
+    "description": "Cleaning of fuel injectors for better mileage and performance.",
+    "image": "uploads/car_fuel_injector_cleaning.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Exhaust System Repair",
+    "price": 3500,
+    "description": "Repair and tuning of exhaust system for better sound and performance.",
+    "image": "uploads/bike_exhaust_system_repair.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Horn Repair",
+    "price": 1200,
+    "description": "Repair or replacement of malfunctioning horn.",
+    "image": "uploads/auto_horn_repair.jpg",
+    "category": "auto"
+  },
+  {
+    "serviceName": "Car Transmission Service",
+    "price": 12000,
+    "description": "Full transmission checkup and service for smooth gear shifting.",
+    "image": "uploads/car_transmission_service.jpg",
+    "category": "car"
+  },
+  {
+    "serviceName": "Bike Puncture Repair",
+    "price": 500,
+    "description": "Quick puncture repair service for bikes.",
+    "image": "uploads/bike_puncture_repair.jpg",
+    "category": "bike"
+  },
+  {
+    "serviceName": "Auto Rickshaw Suspension Check",
+    "price": 4000,
+    "description": "Inspection and tuning of suspension for a smoother ride.",
+    "image": "uploads/auto_suspension_check.jpg",
+    "category": "auto"
+  }
+]

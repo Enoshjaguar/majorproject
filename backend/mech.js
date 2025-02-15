@@ -1,0 +1,21 @@
+const express = require('express')
+const mongoose = require('mongoose')
+const userRegisterRoutes = require('./routes/userRoutes')
+const serviceroutes = require('./routes/ServiceRoutes')
+const cors = require('cors')
+const dotenv = require('dotenv')
+dotenv.config()
+
+const port = 3122
+const app = express()
+app.use(express.json())
+app.use(cors())
+app.use('/user',userRegisterRoutes)
+app.use('/services',serviceroutes)
+app.use('/uploads',express.static('uploads'))
+mongoose.connect(process.env.MONGO_URI)
+    .then(()=>console.log("database connected successfully"))
+    .catch((err)=>console.log("error connecting to the database ",err))
+app.listen(port,()=>{
+    console.log('server is running at',port)
+})
