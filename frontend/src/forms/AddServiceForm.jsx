@@ -35,10 +35,10 @@ const handlesubmit = async(e)=>{
      
     })
     if(response.status===200){
-      console.log("product added successfully")
-      alert("product added successfully")
+      console.log("service added successfully")
+      alert("service added successfully")
     }
-    alert("product adding failed")
+    alert("service adding failed")
   } catch (error) {
     console.log("product adding failed")
     alert("internal server error")
