@@ -40,7 +40,7 @@ const handlesubmit = async(e)=>{
     }
     alert("product adding failed")
   } catch (error) {
-    console.log("product adding failed")
+    console.log("product adding failed",error)
     alert("internal server error")
     
   }
