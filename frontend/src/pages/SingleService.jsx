@@ -25,6 +25,27 @@ const SingleService = () => {
     useEffect(()=>{
         getservidebyid()
     },[])
+
+    const deleteservice = async(id)=>{
+        
+        try{
+
+            const response = await axios.delete(`${API_PATH}/services/deleteservice/${id}`)
+            if(response.status===200){
+                console.log("service deleted successfully")
+                alert("service deleted successfully")
+                window.history.back()
+            }
+            else{
+                alert("failed to delete")
+            }
+        }
+        catch(err){
+            console.error("cannot delete",err)
+            alert("cannot delete")
+        }
+       
+    }
    
   return (
     <div>
@@ -42,6 +63,9 @@ const SingleService = () => {
                                     <h2 className="service-price">₹{service.price}</h2>
                                     <p className="service-description">{service.description}</p>
                                     <button className="book-now-btn">Book Now</button>
+                                    <button onClick={()=>{
+                                        deleteservice(service._id)
+                                    }} className="delete-btn">Delete</button>
                                 </div>
                             </div>
                         </div>

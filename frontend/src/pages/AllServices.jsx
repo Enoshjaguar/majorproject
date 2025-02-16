@@ -37,7 +37,7 @@ const AllServices = () => {
                                 <div className="service-info">
                                     <h2 className="service-name">{service.servicename}</h2>
                                     <h3 className="service-price">${service.price}</h3>
-                                    <h4>{service.description}</h4>
+                                    
                                     <h3>{service.category}</h3>
                                     
                                     <Link to={`/services/${service._id}`}>

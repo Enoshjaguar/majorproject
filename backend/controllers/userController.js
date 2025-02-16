@@ -2,6 +2,8 @@ const bcrypt = require('bcrypt')
 const User = require('../models/userRegistermodel')
 const jwt = require('jsonwebtoken')
 const dotenv = require('dotenv')
+
+
 dotenv.config()
 const secretkey = process.env.SECRET_KEY
 const addnewUser = async(req,res)=>{

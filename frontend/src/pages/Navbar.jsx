@@ -17,6 +17,7 @@ const Navbar = () => {
     localStorage.removeItem('token')
     alert("user logged out")
     window.location.reload()
+    navigate('/')
   }
   const token = localStorage.getItem('token')
   return (
