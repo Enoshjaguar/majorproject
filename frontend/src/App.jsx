@@ -8,11 +8,13 @@ import Homepage from './pages/Homepage'
 
 import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
+import BookService from '../BookService'
 
 const App = () => {
   return (
     <div>
-       <Router>
+      <BookService/>
+       {/* <Router>
         <Routes>
           <Route path='/signup' element={<SignupForm/>}/>
           <Route path='/login' element = {<LoginForm/>}/>
@@ -22,7 +24,7 @@ const App = () => {
           <Route path='/services/:id' element = {<SingleService/>}/>
         
         </Routes>
-       </Router>
+       </Router> */}
        {/* <AllServices/> */}
        {/* <SingleService/> */}
     </div>
