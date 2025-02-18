@@ -8,13 +8,17 @@ import Homepage from './pages/Homepage'
 
 import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
+ HEAD
 import BookService from '../BookService'
+
+import BookService from './forms/BookService'
+import UserBookings from './pages/UserBookings'
+
 
 const App = () => {
   return (
     <div>
-      <BookService/>
-       {/* <Router>
+        <Router>
         <Routes>
           <Route path='/signup' element={<SignupForm/>}/>
           <Route path='/login' element = {<LoginForm/>}/>
@@ -22,11 +26,10 @@ const App = () => {
           <Route path='/services' element={<AllServices/>}/>
           <Route path='/' element={<Homepage/>} />
           <Route path='/services/:id' element = {<SingleService/>}/>
-        
+         <Route path='/bookservice/:id' element={<BookService/>}/>
+         <Route path='//bookings' element={<UserBookings/>}/>
         </Routes>
-       </Router> */}
-       {/* <AllServices/> */}
-       {/* <SingleService/> */}
+       </Router> 
     </div>
   )
 }

@@ -403,3 +403,139 @@ p{
 .addservice-form button:hover {
     background: #0056b3;
 }
+.booking-container {
+    max-width: 400px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .book-btn,
+  .location-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .book-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .location-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .book-btn:hover {
+    background: #0056b3;
+  }
+  
+  .location-btn:hover {
+    background: #218838;
+  }
+  .bookings-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bookings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.booking-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 8px 0;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.no-bookings {
+    font-size: 18px;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+  

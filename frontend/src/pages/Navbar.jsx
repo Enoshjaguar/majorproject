@@ -16,8 +16,9 @@ const Navbar = () => {
     }
     localStorage.removeItem('token')
     alert("user logged out")
-    window.location.reload()
     navigate('/')
+    window.location.reload()
+   
   }
   const token = localStorage.getItem('token')
   return (
@@ -31,7 +32,9 @@ const Navbar = () => {
             {
               token?(<>
                 <li onClick={()=>handlenavigation('/services')}>Services</li>
+                <li onClick={()=>handlenavigation('/bookings')}>MyBookings</li>
                 <li onClick={()=>handlelogout()}>LogOut</li>
+              
                 </>
               ):(
                 <>
