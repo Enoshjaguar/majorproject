@@ -8,6 +8,8 @@ import Homepage from './pages/Homepage'
 
 import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
+import BookService from './forms/BookService'
+import UserBookings from './pages/UserBookings'
 
 const App = () => {
   return (
@@ -20,11 +22,13 @@ const App = () => {
           <Route path='/services' element={<AllServices/>}/>
           <Route path='/' element={<Homepage/>} />
           <Route path='/services/:id' element = {<SingleService/>}/>
-        
+         <Route path='/bookservice/:id' element={<BookService/>}/>
+         <Route path='//bookings' element={<UserBookings/>}/>
         </Routes>
        </Router>
-       {/* <AllServices/> */}
-       {/* <SingleService/> */}
+     
+    
+       
     </div>
   )
 }

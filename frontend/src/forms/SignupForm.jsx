@@ -33,6 +33,9 @@ const SignupForm = () => {
         alert("user registered successfully")
         navigate('/login')
       }
+      else{
+        alert("mobile number exists")
+      }
     }
     catch(err){
       console.log("error registering",err)
