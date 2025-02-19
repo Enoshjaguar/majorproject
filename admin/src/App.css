@@ -1,0 +1,242 @@
+/* Navbar container */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;  /* Add this line to space out the logo and nav items */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;  /* This will move the items to the right side */
+  }
+  
+  /* Each navigation item */
+  .nav-item {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for nav items */
+  .nav-item:hover {
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  
+  /* Active state for nav items */
+  .nav-item:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive design: Navbar on small screens */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 20px;
+      background-color: #2c3e50;
+      padding: 20px;
+      width: 100%;
+      display: none;
+    }
+  
+    .navbar.active .nav-links {
+      display: flex;
+    }
+  }
+
+  
+  /* Container */
+  .bookings-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Bookings grid */
+  .bookings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Booking card */
+  .booking-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Card hover effect */
+  .booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* User Name */
+  .user-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1abc9c;
+  }
+  
+  /* Service Name */
+  .service-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 5px;
+  }
+  
+  /* Mobile, Price, Date */
+  .user-mobile, .price, .date {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  /* Confirm Button */
+  .confirm-btn {
+    background: #27ae60;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Cancel Button */
+  .cancel-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effects */
+  .confirm-btn:hover {
+    background: #219653;
+    transform: scale(1.05);
+  }
+  
+  .cancel-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* No bookings message */
+  .no-bookings {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  /* Styling for the form container */
+.form-container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #007bff;
+  background: #fff;
+  outline: none;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
