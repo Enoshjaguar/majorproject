@@ -8,8 +8,6 @@ import Homepage from './pages/Homepage'
 
 import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
- HEAD
-import BookService from '../BookService'
 
 import BookService from './forms/BookService'
 import UserBookings from './pages/UserBookings'
