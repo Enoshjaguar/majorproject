@@ -52,5 +52,26 @@ const getbookingsbyuser = async(req,res)=>{
         res.status(500).json({ message: "Internal Server Error" ,error:error.message});
     }
 }
+const updatebookingStatus = async(req,res)=>{
+    try{
+        const {id} = req.params
+        const {status} = req.body
+        if(!["Confirmed","Cancelled"].includes(status)){
+            return res.status(400).json({message:"invalid status"})
+        }
+        const booking = await Booking.findByIdAndUpdate(id,
+            {bookingStatus:status},
+            {new:true}
+        )
+        if(!booking){
+            return res.status(404).json({ message: "Booking not found" });
 
-module.exports = {bookservice,getallbookings,getbookingsbyuser}
+        }
+       
+        res.status(200).json({ message: "Booking status updated", booking });
+    }
+    catch (error) {
+        res.status(500).json({ message: "Internal server error", error });
+    }
+}
+module.exports = {bookservice,getallbookings,getbookingsbyuser,updatebookingStatus}

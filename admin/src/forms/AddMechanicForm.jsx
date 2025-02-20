@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios'
 import { API_PATH } from '../data/apipath';
 import Navbar from '../pages/Navbar';

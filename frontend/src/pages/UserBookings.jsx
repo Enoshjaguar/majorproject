@@ -60,6 +60,7 @@ const UserBookings = () => {
                         <p className="price">💰 Price: ₹{booking.price}</p>
                         <p className="location">📍 Location: {booking.userLocation}</p>
                         <p className="date">📅 Date: {booking.createdAt.split('T')[0]}</p>
+                        <p>{booking.bookingStatus}</p>
                     </div>
                 ))}
             </div>
