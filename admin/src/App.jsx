@@ -8,6 +8,8 @@ import AllMechs from './pages/AllMechs'
 import AddServiceForm from './forms/AddServiceForm'
 import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
+import AllUsers from './pages/AllUsers'
+import AllUserBookings from './pages/AllUserBookings'
 
 const App = () => {
   return (
@@ -20,10 +22,14 @@ const App = () => {
           <Route path='/addservice' element={<AddServiceForm/>}/>
           <Route path='allservices' element={<AllServices/>}/>
           <Route path='/service/:id' element={<SingleService/>}/>
+          <Route path='allusers' element={<AllUsers/>}/>
+          <Route path='/userbookings/:id' element={<AllUserBookings/>}/>
         </Routes>
 
 
       </Router>
+      
+     
     
       
       
