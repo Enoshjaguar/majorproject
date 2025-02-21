@@ -100,19 +100,18 @@ const AddMechanicForm = () => {
        <option value="auto_headlight_and_taillight_replacement">Auto Headlight & Taillight Replacement</option>
        
        
-       <option value="vehicle_oil_change">Oil Change</option>
-       <option value="vehicle_tire_rotation">Tire Rotation</option>
-       <option value="vehicle_diagnostic_check">Diagnostic Check</option>
-       <option value="vehicle_spark_plug_replacement">Spark Plug Replacement</option>
-       <option value="vehicle_cooling_system_flush">Cooling System Flush</option>
-       <option value="vehicle_timing_belt_replacement">Timing Belt Replacement</option>
-       <option value="vehicle_air_filter_replacement">Air Filter Replacement</option>
-       <option value="vehicle_bearing_and_joint_repair">Bearing & Joint Repair</option>
-       <option value="vehicle_hydraulic_system_fix">Hydraulic System Fix</option>
-       <option value="vehicle_electrical_wiring_repair">Electrical Wiring Repair</option>
-       <option value="vehicle_steering_alignment">Steering Alignment</option>
-       <option value="vehicle_dashboard_repair">Dashboard Repair</option>
-       <option value="vehicle_body_painting_and_denting">Body Painting & Denting</option>
+       <option value="Bike Gear Reaplacement">Bike Gear Reaplacement</option>
+       <option value="Bike Tubeless Setup">Bike Tubeless Setup</option>
+       <option value="Bike Assemble">Bike Assemble</option>
+       <option value="Bike Body Wash">Bike Body Wash</option>
+       <option value="Bike Door Step Inspection">Bike Door Step Inspection</option>
+       <option value="Bike Accessory Fitting">Bike Accessory Fitting</option>
+       <option value="Car Fuel Cleaning">Car Fuel Cleaning</option>
+       <option value="Car Time Belt Replacement">Car Time Belt Replacement</option>
+       <option value="Car Tire Rotation">Car Tire Rotation</option>
+       <option value="Car Body Wash">Car Body Wash</option>
+       <option value="Auto Body Wash">Auto Body Wash</option>
+       <option value="Auto Painting & Denting">Auto Painting & Denting</option>
        </select>
  
         </div>

@@ -61,9 +61,7 @@ const SingleService = () => {
                                     <button className="book-now-btn">Book Now</button>
                                     </Link>
                                     
-                                    <button onClick={()=>{
-                                        deleteservice(service._id)
-                                    }} className="delete-btn">Delete</button>
+
                                 </div>
                             </div>
                         </div>

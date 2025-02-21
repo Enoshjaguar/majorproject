@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 
 const AllServices = () => {
     const [services,setServices] = useState([])
+    const [searchTerm,setSearchTerm] = useState('')
+    const filteredservices = services.filter((service)=>{
+        return service.servicename.toLowerCase().includes(searchTerm.toLowerCase())
+    })
     const getallservices = async()=>{
         try {
             const response = await axios.get(`${API_PATH}/services/allservices`)
@@ -25,10 +29,15 @@ const AllServices = () => {
         <Navbar/>
         <div className="services-container">
             <h1 className="title">Our Services</h1>
+            <input type="text" placeholder='search for a service'
+            className='search-bar'
+            value={searchTerm}
+            onChange={(e)=>setSearchTerm(e.target.value)}
+             />
             {
-                services && services.length > 0 ? (
+                 filteredservices.length > 0 ? (
                     <div className="services-grid">
-                        {services.map((service, index) => (
+                        {filteredservices.map((service, index) => (
                             <div className="service-card" key={index}>
 
                                <img className="service-image" src={`${API_PATH}/uploads/${service.image}`} alt="Service" />

@@ -79,4 +79,5 @@ const getuserbyid = async(req,res)=>{
     
   }
 }
+
 module.exports = {addnewUser,userLogin,getallusers,getuserbyid}

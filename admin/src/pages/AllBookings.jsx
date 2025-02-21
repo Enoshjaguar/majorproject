@@ -11,14 +11,13 @@ const AllBookings = () => {
     try {
       const response = await axios.get(`${API_PATH}/book/allbookings`);
       if (response.status === 200) {
-        setBookings(response.data.allbookings);
+        setBookings(response.data.allbookings.reverse());
       }
     } catch (error) {
       console.log("Error fetching bookings", error);
     }
   };
 
-  // Update booking status
   const updateBookingStatus = async (id, newStatus) => {
     try {
       const response = await axios.put(
