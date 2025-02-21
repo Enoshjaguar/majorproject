@@ -523,4 +523,105 @@ p{
     font-weight: bold;
 }
 
-  
+  /* Spare Parts Container */
+.sparepart-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Grid Layout */
+.sparepart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Card Styling */
+.sparepart-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sparepart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.sparepart-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.sparepart-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Spare Part Details */
+.sparepart-details {
+    margin-top: 10px;
+}
+
+.sparepart-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sparepart-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* No Spare Parts Message */
+.no-spareparts-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 20px;
+}
+/* Buy Button Styling */
+.buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+    transform: scale(1.05);
+}
+
+.buy-btn:active {
+    transform: scale(0.95);
+    background: #003d7a;
+}

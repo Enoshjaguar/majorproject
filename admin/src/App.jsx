@@ -10,6 +10,8 @@ import AllServices from './pages/AllServices'
 import SingleService from './pages/SingleService'
 import AllUsers from './pages/AllUsers'
 import AllUserBookings from './pages/AllUserBookings'
+import AddSpareParts from './forms/AddSpareParts'
+
 
 const App = () => {
   return (
@@ -24,10 +26,12 @@ const App = () => {
           <Route path='/service/:id' element={<SingleService/>}/>
           <Route path='allusers' element={<AllUsers/>}/>
           <Route path='/userbookings/:id' element={<AllUserBookings/>}/>
+          <Route path='/addspareparts' element={<AddSpareParts/>}/>
         </Routes>
 
 
       </Router>
+    
       
      
     
