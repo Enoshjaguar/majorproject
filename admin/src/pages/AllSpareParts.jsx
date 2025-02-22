@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { API_PATH } from '../data/apipath'
 import axios from 'axios'
+import Navbar from './Navbar'
 
 const AllSpareParts = () => {
     const [spareparts,setSpareParts] = useState([])
@@ -48,6 +49,8 @@ const AllSpareParts = () => {
         getallspareparts()
     },[])
   return (
+    <>
+    <Navbar/>
     <div className="sparepart-list-container">
         {spareparts.length > 0 ? (
             <div className="sparepart-grid">
@@ -77,6 +80,7 @@ const AllSpareParts = () => {
             <p className="no-spareparts-message">No spare parts available</p>
         )}
     </div>
+    </>
   )
 }
 
