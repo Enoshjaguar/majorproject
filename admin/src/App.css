@@ -647,3 +647,84 @@ p{
   transform: translateY(-3px);
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15); /* Elevate on hover */
 }
+/* Spare Part Form Container */
+.sparepart-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Form Card */
+.sparepart-form-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.sparepart-form-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form */
+.sparepart-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.sparepart-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Labels */
+.sparepart-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Inputs */
+.sparepart-input,
+.sparepart-file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.sparepart-input:focus,
+.sparepart-file-input:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button */
+.sparepart-submit-btn {
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.sparepart-submit-btn:hover {
+  background: #0056b3;
+}
