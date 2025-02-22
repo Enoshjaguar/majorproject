@@ -112,6 +112,15 @@ const AddMechanicForm = () => {
        <option value="Car Body Wash">Car Body Wash</option>
        <option value="Auto Body Wash">Auto Body Wash</option>
        <option value="Auto Painting & Denting">Auto Painting & Denting</option>
+
+       <option value="Car Body Denting & Painting">Car Body Denting & Painting</option>
+       <option value="Bike Body Denting & Painting">Bike Body Denting & Painting</option>
+       <option value="Car Electrical Repair">Car Electrical Repair</option>
+       <option value="Auto Clutch & Gearbox Repairs">Auto Clutch & Gearbox Repairs</option>
+       <option value="Auto Lighting & Wiring Repairs">Auto Lighting & Wiring Repairs</option>
+       <option value="Auto Body Welding & Fabrication">Auto Body Welding & Fabrication</option>
+       <option value="Auto Silencer & Exhaust System">Auto Silencer & Exhaust System</option>
+       <option value="Auto Roadside Breakdown Assistance">Auto Roadside Breakdown Assistance</option>
        </select>
  
         </div>

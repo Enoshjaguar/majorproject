@@ -57,7 +57,7 @@ const AllBookings = () => {
         <h1 className="heading">All Bookings</h1>
         {bookings.length > 0 ? (
           <div className="bookings-grid">
-            {bookings.map((booking, index) => (
+            {bookings.map((booking) => (
               <div className="booking-card" key={booking._id}>
                 <div className="booking-info">
                   <h2 className="user-name">{booking.userName}</h2>
