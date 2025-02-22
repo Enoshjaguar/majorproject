@@ -7,16 +7,19 @@ const AddSpareParts = () => {
     const [sparepartname,setSparePartName] = useState('')
     const [sparepartprice,setSparePartPrice] = useState('')
     const [sparepartdescription,setSparePartDescription] = useState('')
+    const [sparepartcategory,setSparePartCategory] = useState('')
     const [sparepartimage,setSparePartFile ] = useState(null)
 
     
 const handleimagesubmit = (e)=>{setSparePartFile(e.target.files[0])}
+const handlecategorysubmit = (e)=>setSparePartCategory(e.target.value)
     const handlesubmit = async(e)=>{
         e.preventDefault()
         const formData = new FormData()
         formData.append('sparepartname',sparepartname)
         formData.append("sparepartprice",sparepartprice)
         formData.append("sparepartdescription",sparepartdescription)
+        formData.append("sparepartcategory",sparepartcategory)
         formData.append("sparepartimage",sparepartimage)
 
         try{
@@ -69,6 +72,18 @@ const handleimagesubmit = (e)=>{setSparePartFile(e.target.files[0])}
             onChange={(e) => setSparePartPrice(e.target.value)}
           />
         </div>
+
+        <div className="category-options">
+                <label>
+                    <input type="radio" name="category" checked={sparepartcategory==="bike"} value="bike" onChange={handlecategorysubmit} /> Bike
+                </label>
+                <label>
+                    <input type="radio" name="category" checked={sparepartcategory==="car"} value="car" onChange={handlecategorysubmit} /> Car
+                </label>
+                <label>
+                    <input type="radio" name="category" checked={sparepartcategory==="auto"} value="auto" onChange={handlecategorysubmit} /> Auto
+                </label>
+            </div>
   
         {/* Description Input */}
         <div className="sparepart-form-group">

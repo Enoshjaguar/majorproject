@@ -45,6 +45,7 @@ const AllSpareParts = () => {
                     <div className="sparepart-details">
                         <h1 className="sparepart-name">{sparepart.sparepartname}</h1>
                         <h2 className="sparepart-price">${sparepart.sparepartprice}</h2>
+                        <p>{sparepart.sparepartcategory}</p>
                     </div>
                     <button className='buy-btn'>Buy</button>
                 </div>

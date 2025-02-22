@@ -1,57 +1,56 @@
-
-/* Navbar container */
-.navbar {
-  background-color: #1F2937; /* Dark navy background */
+/* Navbar.css */
+.admin-navbar {
+  background-color: #1f2937; /* Dark grayish-blue */
   padding: 15px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar list */
-.nav-links {
+.admin-nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 
-/* Navbar items */
-.nav-item {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+.admin-nav-item {
+  position: relative;
 }
 
-/* Navbar links */
-.nav-item a {
+.admin-nav-item a {
   text-decoration: none;
-  color: #F9FAFB; /* Light text */
-  padding: 10px 15px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  color: #d1d5db; /* Light gray */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Hover effect */
-.nav-item a:hover {
-  background-color: #3B82F6; /* Blue hover */
-  color: white;
+.admin-nav-item a:hover {
+  color: #facc15; /* Yellow on hover */
+}
+
+/* Add an underline effect on hover */
+.admin-nav-item a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #facc15;
+  transition: width 0.3s ease-in-out;
+}
+
+.admin-nav-item a:hover::after {
+  width: 100%;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
+  .admin-nav-links {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-item {
-    padding: 10px 0;
+    align-items: center;
+    gap: 10px;
   }
 }
 
@@ -728,3 +727,106 @@ p{
 .sparepart-submit-btn:hover {
   background: #0056b3;
 }
+/* Spare Parts Container */
+.sparepart-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Grid Layout */
+.sparepart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.sparepart-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sparepart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.sparepart-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.sparepart-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Spare Part Details */
+.sparepart-details {
+  margin-top: 10px;
+}
+
+.sparepart-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sparepart-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* No Spare Parts Message */
+.no-spareparts-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: #888;
+  margin-top: 20px;
+}
+/* Buy Button Styling */
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a);
+  transform: scale(1.05);
+}
+
+.buy-btn:active {
+  transform: scale(0.95);
+  background: #003d7a;
+}
+

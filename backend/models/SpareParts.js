@@ -9,6 +9,14 @@ const sparepartSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    sparepartcategory:{
+        type:[
+            {
+                type:String,
+                enum:["bike","car","auto"]
+            }
+        ]
+    },
     sparepartdescription:{
         type:String,
         required:true
