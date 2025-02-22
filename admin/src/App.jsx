@@ -11,6 +11,8 @@ import SingleService from './pages/SingleService'
 import AllUsers from './pages/AllUsers'
 import AllUserBookings from './pages/AllUserBookings'
 import AddSpareParts from './forms/AddSpareParts'
+import AllSpareParts from './pages/AllSpareParts'
+
 
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
           <Route path='allusers' element={<AllUsers/>}/>
           <Route path='/userbookings/:id' element={<AllUserBookings/>}/>
           <Route path='/addspareparts' element={<AddSpareParts/>}/>
+          <Route path='/allspareparts' element={<AllSpareParts/>}/>
         </Routes>
 
 
