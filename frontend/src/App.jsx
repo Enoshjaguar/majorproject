@@ -12,6 +12,7 @@ import SingleService from './pages/SingleService'
 import BookService from './forms/BookService'
 import UserBookings from './pages/UserBookings'
 import AllSpareParts from './pages/AllSpareParts'
+import Chat from './pages/Chat'
 
 
 
@@ -29,8 +30,10 @@ const App = () => {
          <Route path='/bookservice/:id' element={<BookService/>}/>
          <Route path='//bookings' element={<UserBookings/>}/>
          <Route path='/allspareparts' element={<AllSpareParts/>}/>
+         <Route path='/chat' element={<Chat/>}/>
         </Routes>
        </Router> 
+      
     </div>
   )
 }

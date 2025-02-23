@@ -14,6 +14,7 @@ const Navbar = () => {
         <li className='admin-nav-item'><Link to='/allusers'>All Users</Link></li>
         <li className='admin-nav-item'><Link to='/addspareparts'>Add SpareParts</Link></li>
         <li className='admin-nav-item'><Link to='/allspareparts'>Spare Parts</Link></li>
+        <li className='admin-nav-item'><Link to='/chat'>Chat</Link></li>
       </ul>
     </nav>
   );

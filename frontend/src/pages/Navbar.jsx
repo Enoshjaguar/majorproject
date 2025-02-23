@@ -34,6 +34,7 @@ const Navbar = () => {
                 <li onClick={()=>handlenavigation('/services')}>Services</li>
                 <li onClick={()=>handlenavigation('/bookings')}>MyBookings</li>
                 <li onClick={()=>handlenavigation('/allspareparts')}>Spare Parts</li>
+                <li onClick={()=>handlenavigation('/chat')}>Chat</li>
                 <li onClick={()=>handlelogout()}>LogOut</li>
               
                 </>

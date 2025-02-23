@@ -12,6 +12,7 @@ import AllUsers from './pages/AllUsers'
 import AllUserBookings from './pages/AllUserBookings'
 import AddSpareParts from './forms/AddSpareParts'
 import AllSpareParts from './pages/AllSpareParts'
+import AdminChat from './pages/AdminChat'
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='/userbookings/:id' element={<AllUserBookings/>}/>
           <Route path='/addspareparts' element={<AddSpareParts/>}/>
           <Route path='/allspareparts' element={<AllSpareParts/>}/>
+          <Route path='/chat' element={<AdminChat/>}/>
         </Routes>
 
 
