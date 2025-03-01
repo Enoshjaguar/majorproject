@@ -56,4 +56,23 @@ const deletesparepart = async(req,res)=>{
     }
 }
 
-module.exports = {addsparepart,getallspareparts,deletesparepart}
+const getsparepartbyid = async(req,res)=>{
+    const {id} = req.params
+    try{
+        const sparepart = await SparePart.findById(id)
+        if(!sparepart){
+            console.log("cannot find this spare part")
+            return res.status(500).json({message:"cannot find this sparepart"})
+        }
+        console.log("sparepart fetched successfully")
+        return res.status(200).json({message:"spare part fetches successfully",sparepart})
+    }
+    catch (error) {
+        console.error("error fetching the spare part",error)
+        
+    }
+}
+
+
+
+module.exports = {addsparepart,getallspareparts,deletesparepart,getsparepartbyid}

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../data/Apipath'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 const AllSpareParts = () => {
     const [spareparts,setSpareParts] = useState([])
@@ -47,7 +48,9 @@ const AllSpareParts = () => {
                         <h2 className="sparepart-price">${sparepart.sparepartprice}</h2>
                         <p>{sparepart.sparepartcategory}</p>
                     </div>
+                    <Link to={`/singlesparepart/${sparepart._id}`}>
                     <button className='buy-btn'>Buy</button>
+                    </Link>
                 </div>
                 
             ))}

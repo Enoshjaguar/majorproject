@@ -1,8 +1,11 @@
 const express = require('express')
 const upload = require('../middlewares/multerconfig')
 const sparepartcontroller = require('../controllers/SparePartsController')
+const sparepartbookingcontroller = require('../controllers/SparePartBookingController')
 const router = express.Router()
 router.post('/addsparepart',upload.single('sparepartimage'),sparepartcontroller.addsparepart)
 router.get('/allspareparts',sparepartcontroller.getallspareparts)
 router.delete('/deletesparepart/:id',sparepartcontroller.deletesparepart)
+router.get('/getsparepartbyid/:id',sparepartcontroller.getsparepartbyid)
+router.post('/booksparepart',sparepartbookingcontroller.booksparepart)
 module.exports = router

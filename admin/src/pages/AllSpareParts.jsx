@@ -72,6 +72,7 @@ const AllSpareParts = () => {
                         <button onClick={()=>{
                             deletesparepart(sparepart._id)
                         }} className='buy-btn'>Delete</button>
+                       
                     </div>
                     
                 ))}

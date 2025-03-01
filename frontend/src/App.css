@@ -712,3 +712,108 @@ p{
 .chat-send-button:hover {
     background-color: #0056b3;
 }
+/* Center the entire card and make it full width */
+.sparepart-card {
+    width: 90%; /* Takes 90% of the screen width */
+    max-width: 600px; /* Maximum width for better readability */
+    background: linear-gradient(135deg, #1E293B, #475569);
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    margin: 40px auto; /* Centers the card horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make the image responsive */
+.sparepart-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sparepart-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sparepart-card:hover .sparepart-image img {
+    transform: scale(1.05);
+}
+
+/* Content Section */
+.sparepart-details {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.sparepart-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.sparepart-category {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A0AEC0;
+}
+
+.sparepart-description {
+    font-size: 16px;
+    color: #CBD5E1;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+.sparepart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.sparepart-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00FF7F;
+}
+
+/* Buy Now Button */
+.buy-now {
+    background: #FF4500;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.buy-now:hover {
+    background: #FF6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sparepart-card {
+        width: 95%; /* Slightly smaller width for mobile screens */
+    }
+    .sparepart-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
