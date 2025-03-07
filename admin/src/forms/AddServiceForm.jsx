@@ -69,7 +69,7 @@ const handlesubmit = async(e)=>{
 
             <label>Category:</label>
             <div className="category-options">
-                <label>
+                <label> 
                     <input type="radio" name="category" checked={category==="bike"} value="bike" onChange={handlecategorysubmit} /> Bike
                 </label>
                 <label>

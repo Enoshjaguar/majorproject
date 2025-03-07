@@ -15,6 +15,7 @@ import AllSpareParts from './pages/AllSpareParts'
 import Chat from './pages/Chat'
 import SingleSparePart from './pages/SingleSparePart'
 import SparePartBookingForm from './forms/SparePartBookingForm'
+import OrderConfirmed from './pages/OrderConfirmed'
 
 
 
@@ -34,9 +35,11 @@ const App = () => {
          <Route path='/allspareparts' element={<AllSpareParts/>}/>
          <Route path='/chat' element={<Chat/>}/>
          <Route path='/singlesparepart/:id' element={<SingleSparePart/>}/>
+         <Route path='/buysparepart/:id' element={<SparePartBookingForm/>}/>
+         <Route path='/bookingconfirmed' element={<OrderConfirmed/>}/>
         </Routes>
        </Router> 
-       {/* <SparePartBookingForm/> */}
+      
       
       
     </div>

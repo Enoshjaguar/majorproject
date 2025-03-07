@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { API_PATH } from '../data/Apipath'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const SingleSparePart = () => {
     const {id} = useParams()
@@ -29,7 +29,8 @@ const SingleSparePart = () => {
   return (
     <div className="sparepart-card">
     <div className="sparepart-image">
-        <img src={sparepart.sparepartimage} alt="Spare Part" />
+       
+        <img src={`${API_PATH}/uploads/${sparepart.sparepartimage}`} alt="Spare Part" />
     </div>
     <div className="sparepart-details">
         <h2 className="sparepart-name">{sparepart.sparepartname}</h2>
@@ -37,7 +38,10 @@ const SingleSparePart = () => {
         <p className="sparepart-description">{sparepart.sparepartdescription}</p>
         <div className="sparepart-footer">
             <span className="sparepart-price">${sparepart.sparepartprice}</span>
+            <Link to={`/buysparepart/${sparepart._id}`}>
             <button className="buy-now">Buy Now</button>
+            </Link>
+            
         </div>
     </div>
 </div>

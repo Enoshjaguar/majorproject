@@ -20,10 +20,7 @@ const sparepartbookingschema = new mongoose.Schema({
         type:String,
         required:true
     },
-    Quantity:{
-        type:Number,
-        required:true
-    }
+ 
 })
 
 const  SparePartBooking = mongoose.model('sparepartbooking',sparepartbookingschema)

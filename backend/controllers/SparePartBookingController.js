@@ -1,7 +1,7 @@
 const Sparepart = require('../models/SparePartBooking')
 
 const booksparepart = async(req,res)=>{
-    const {ProductName, UserName,userMobile,ProductPrice,Address,Quantity} = req.body
+    const {ProductName, UserName,userMobile,ProductPrice,Address} = req.body
     try{
         const booknewsparepart = new Sparepart({
             ProductName,
@@ -9,7 +9,7 @@ const booksparepart = async(req,res)=>{
             userMobile,
             ProductPrice,
             Address,
-            Quantity
+            
         })
         const newbooking = booknewsparepart.save()
         if(!newbooking){
@@ -20,7 +20,7 @@ const booksparepart = async(req,res)=>{
         return res.status(200).json({message:"spare part booked successfully!!!!"})
     }
     catch(error){
-        console.log("error booking spare part")
+        console.log("error booking spare part",error)
 
     }
 }
