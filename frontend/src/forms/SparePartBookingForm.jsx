@@ -16,7 +16,7 @@ const SparePartBookingForm = () => {
   const [address, setAddress] = useState('');
   const { id } = useParams();
 
-  // Fetch spare part by ID
+
   const getSparePartById = async () => {
     try {
       const response = await axios.get(`${API_PATH}/spareparts/getsparepartbyid/${id}`);
@@ -35,7 +35,7 @@ const SparePartBookingForm = () => {
     getSparePartById();
   }, [id]);
 
-  // Update product name and price when sparepart state changes
+
   useEffect(() => {
     if (sparepart) {
       setProductName(sparepart.sparepartname);
@@ -43,7 +43,6 @@ const SparePartBookingForm = () => {
     }
   }, [sparepart]);
 
-  // Book spare part function
   const bookSparePart = async (e) => {
     e.preventDefault();
 
@@ -60,8 +59,8 @@ const SparePartBookingForm = () => {
       if (response.status === 200) {
   
       setTimeout(()=>{
-        navigate('/bookingconfirmed')
-      },2000)
+        navigate('/payment')
+      },100)
         
         
         

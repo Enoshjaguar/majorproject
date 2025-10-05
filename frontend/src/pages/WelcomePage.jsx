@@ -11,7 +11,7 @@ return (
     <h1>Welcome to the Welcome Page</h1>
     {user ? (
       <div>
-        <p>Mobile number: {user.mobile}</p> 
+        <p>Mobile number: {user.mobile}</p>
         <p>num : {user.mobile}</p>
       </div>
     ) : (

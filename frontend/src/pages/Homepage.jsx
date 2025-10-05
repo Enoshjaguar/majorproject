@@ -4,6 +4,7 @@ import '../App.css'
 import {jwtDecode} from 'jwt-decode'
 import axios from 'axios'
 import { API_PATH } from '../data/Apipath'
+import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   const [user,setUser] = useState('')
@@ -47,9 +48,18 @@ useEffect(()=>{
         )
       }
      
-        <h1 className='titlecard'>24/7 Car and Bike <br /> Mechanic Repair <br />Services</h1>
+        <h1 className='titlecard'>Fast & Reliable  <br /><span> Mechanic Solutions... <br /></span></h1>
         <img src="images/homepageimg.png" alt="no img found" />
         <button className='bookbtn'>Book Service</button>
+        {user ? (
+  <Link to="/services">
+    <button className="bookbtn">Book Service</button>
+  </Link>
+) : (
+  <button className="bookbtn" onClick={() => alert("Please log in to see services")}>
+    Book Service
+  </button>
+)}
       </div>
       <div className="homepagematter">
         <h2>What do we do?</h2>

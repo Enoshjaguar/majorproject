@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 91vh;
     background-color: #f4f4f4;
     
 }
@@ -28,7 +28,7 @@ form h1{
 }
 form label{
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     text-align: center;
     font-size: 14px;
     color: #555;
@@ -54,6 +54,72 @@ form input{
 .signupbtn:hover{
     background-color: #0056b3;
 } 
+.order-confirmed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f4f4f9; 
+  }
+  
+  .order-confirmed-box {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .order-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  .order-message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .order-details {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .back-home-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 .navbar{
     background-color: #32c888;
     height: 70px;
@@ -67,10 +133,28 @@ form input{
 }
 .nav-section ul li{
     list-style-type: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     cursor: pointer;
     color: white;
+}
+.nav-section ul li:hover {
+        color: #fafa15;
+}
+/* Add an underline effect on hover */
+.nav-section ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    position: relative;
+    left: 0px;
+    height: 2px;
+    background-color: #facc15;
+    transition: width 0.3s ease-in-out;
+}
+.nav-section ul li:hover::after {
+    width: 100%;
 }
 .nav-section ul{
   
@@ -85,20 +169,31 @@ form input{
 .titlecard{
     color: #000000;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 480;
     position: absolute;
-    left: 160px;
-    top: 250px;
+    left: 80px;
+    top: 230px;
+}
+.titlecard span {
+    font-weight: 250px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-.homepage img{
-    position: absolute;
-    right: 35px;
+/* Hover effect */
+.titlecard span:hover {
+    color: #ff5222d5; /* Change to a different highlight color */
 }
+.homepage img {
+    position :absolute;
+    right: 10px;
+    top: 120px;
+    transition: transform 0.5s ease-in-out;
+}
+
 .bookbtn{
     position: absolute;
-    left: 160px;
-    top: 600px;
+    left: 280px;
+    top: 500px;
     width: 200px;
     font-size: 18px;
     border: none;
@@ -107,69 +202,86 @@ form input{
     padding: 10px 20px;
     border-radius: 15px;
 }
+.bookbtn:hover {
+    box-shadow: 0 0 10px rgba(212, 255, 0, 0.842), 
+                0 0 20px rgba(0, 255, 85, 0.682), 
+                0 0 30px rgba(0, 255, 145, 0.336);
+}
+.bookbtn:active {
+    transform: scale(0.95);
+}
 .homepagematter{
- 
     position: relative;
-    top: 500px;
-    
+    top: 460px;
     width: 100%;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
-.stepsmaindiv{
-    
+.stepsmaindiv {
     display: flex;
     position: relative;
-    top: 500px;
+    top: 480px;
     justify-content: space-evenly;
 }
 .stepssinglediv {
     text-align: center;
 }
+.stepssinglediv img {
+    width: 140px; /* Adjust image size */
+    height: auto;
+    border-radius: 18px; /* Optional: rounded corners */
+    transition: box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.stepssinglediv img:hover {
+    box-shadow: 0 0 10px 2px rgba(255, 0, 242, 0.408), 
+                0 0 20px 4px rgba(255, 221, 0, 0.489), 
+                0 0 30px 6px rgba(255, 230, 0, 0.181);
+    transform: scale(1.05);
+}
 .stepssinglediv p{
     color: #2e2e2e;
-    font-weight: 200;
-    font-size: 16px;
-
+    font-weight: 350;
+    font-size: 12px;
 }
 .homepagematter p{
     color: #2e2e2e;
-    font-weight: 200;
+    font-weight: 300;
 }
 .topservices{
     display: flex;
-    
     justify-content: space-evenly;
     position: relative;
-    top: 550px;
+    top: 580px;
 }
 .topservicessingle{
     background-color: #242b2c;
     width: 22%;
     height: 200px;
-    border-radius: 15px;
+    border-radius: 60px;
 }
 .topservicessingle h3{
     color: #ffcc33;
     justify-content: center;
     align-items: center;
     margin-top: 85px;
-    margin-left: 10px;
+    margin-left: 18px;
     font-size: 15px;
     
 }
 .topservicessingle img{
-    width: 193px;
-    height: 195px;
+    width: 180px;
+    height: 200px;
     position: relative;
     left: 130px;
     bottom: 122px;
-    
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .whyus{
     position: relative;
-    top: 535px;
+    top: 540px;
     text-align: center;
+    font-size: 30px;
 }
 .formsection span{
     color: blue;
@@ -186,6 +298,7 @@ form input{
 
 .title {
     font-size: 2rem;
+    font-weight: 1000%;
     margin-bottom: 20px;
     color: #333;
 }
@@ -193,26 +306,30 @@ form input{
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
+    gap: 45px;
     justify-content: center;
 }
 
 .service-card {
-    background: white;
+    background: rgb(234, 231, 231);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(161, 2, 2, 0.884);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
 }
 
 .service-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(169, 10, 10, 0.84);
 }
 
 .service-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .service-info {
@@ -222,7 +339,7 @@ form input{
 .service-name {
     font-size: 1.5rem;
     color: #444;
-    margin: 10px 0;
+    margin: 1px 0;
 }
 
 .service-price {
@@ -243,13 +360,15 @@ form input{
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
 .book-button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #0056b3, #007a1e7f);
+    transform: scale(1.05);
 }
+
 .search-bar {
     width: 100%;
     max-width: 400px;
@@ -259,8 +378,7 @@ form input{
     border-radius: 8px;
     position: relative;
     left: 400px;
-    bottom: 55px;
-
+    bottom: 60px;
     outline: none;
     transition: all 0.3s ease-in-out;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -279,29 +397,31 @@ form input{
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(135deg, #f8f9fa, #e3e6eb);
-    padding: 20px;
+    padding: 2px;
 }
 
 /* Service Card */
 .service-card {
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 30px;
+    padding: 10px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(173, 12, 12, 0.2);
 }
 
 /* Image Section */
 .image-container img {
-    width: 100%;
-    height: 350px;
+    width: 80%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -319,7 +439,7 @@ form input{
 
 .service-price {
     font-size: 1.5rem;
-    color: #ff4d00;
+    color: #ff0000;
     font-weight: bold;
 }
 p{
@@ -328,16 +448,16 @@ p{
 .service-description {
     font-size: 1.1rem;
     color: #555;
-    margin: 15px 0;
+    margin: 1px 0;
     line-height: 1.6;
     font-weight: 400;
 }
 
 /* Book Now Button */
 .book-now-btn {
-    display: inline-block;
-    width: 100%;
-    padding: 15px;
+
+    width: 40%;
+    padding: 10px;
     background-color: #ff4d00;
     color: #fff;
     font-size: 1.2rem;
@@ -349,7 +469,7 @@ p{
 }
 
 .book-now-btn:hover {
-    background-color: #e63c00;
+    background-color: #e6003a;
 }
 
 
@@ -389,13 +509,15 @@ p{
     background: #0056b3;
 }
 .booking-container {
-    max-width: 400px;
+    max-width: 300px;
     margin: auto;
     background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 60px;
+    box-shadow: 4px 4px 10px 5px rgba(66, 62, 62, 0.462);
     text-align: center;
+    max-height: 800px;
+    transition: all 0.3s ease-in-out;
   }
   
   .title {
@@ -506,7 +628,7 @@ p{
 }
 
 .location {
-    font-size: 14px;
+    font-size: 15px;
     color: #6c757d;
     margin: 8px 0;
 }
@@ -529,7 +651,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     background-color: #f4f4f4;
 }
 
@@ -537,7 +659,7 @@ p{
 .sparepart-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
@@ -546,16 +668,16 @@ p{
 /* Card Styling */
 .sparepart-card {
     background: #fff;
-    padding: 15px;
+    padding: 13px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(171, 144, 10, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .sparepart-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(173, 12, 12, 0.2);
 }
 
 /* Image Styling */
@@ -566,23 +688,23 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 
 .sparepart-image {
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 80%;
     object-fit: cover;
     border-radius: 8px;
 }
 
 /* Spare Part Details */
 .sparepart-details {
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .sparepart-name {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
 }
@@ -600,14 +722,57 @@ p{
     color: #888;
     margin-top: 20px;
 }
+
+.sparepart-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .sparepart-input-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  .sparepart-input-group input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  .sparepart-input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .sparepart-book-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sparepart-book-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3);
+  }
+
 /* Buy Button Styling */
 .buy-btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 50px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(135deg, #007BFF, #0056b3);
+    background: linear-gradient(135deg, #0056b3, #003d7a);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -617,13 +782,13 @@ p{
 }
 
 .buy-btn:hover {
-    background: linear-gradient(135deg, #0056b3, #003d7a);
+    background: linear-gradient(135deg, #0056b3, #7a0012d0);
     transform: scale(1.05);
 }
 
 .buy-btn:active {
     transform: scale(0.95);
-    background: #003d7a;
+    background: #fff;
 }
 /* General Chat Container */
 .chat-container {
@@ -715,14 +880,14 @@ p{
 /* Center the entire card and make it full width */
 .sparepart-card {
     width: 90%; /* Takes 90% of the screen width */
-    max-width: 600px; /* Maximum width for better readability */
+    max-width: 400px; /* Maximum width for better readability */
     background: linear-gradient(135deg, #1E293B, #475569);
     color: #fff;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    margin: 40px auto; /* Centers the card horizontally */
+    margin: 50px auto; /* Centers the card horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -804,7 +969,7 @@ p{
 }
 
 .buy-now:hover {
-    background: #FF6347;
+    background: #d70d06;
 }
 
 /* Responsive Design */
@@ -817,147 +982,3 @@ p{
         gap: 10px;
     }
 }
-/* Container Styling */
-.sparepart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  /* Form Box Styling */
-  .sparepart-form-box {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Title Styling */
-  .sparepart-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Input Group Styling */
-  .sparepart-input-group {
-    margin-bottom: 15px;
-  }
-  
-  .sparepart-input-group label {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  .sparepart-input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-  }
-  
-  .sparepart-input-group input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  /* Button Styling */
-  .sparepart-book-btn {
-    width: 100%;
-    background: #007bff;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .sparepart-book-btn:hover {
-    background: #0056b3;
-  }
-  /* Order Confirmation Page Styling */
-.order-confirmed-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    text-align: center;
-  }
-  
-  .order-confirmed-box {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    width: 90%;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  .order-icon {
-    color: #28a745;
-    margin-bottom: 15px;
-  }
-  
-  .order-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .order-message {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  .order-details {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .back-home-btn {
-    background: #28a745;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .back-home-btn:hover {
-    background: #218838;
-    transform: scale(1.05);
-  }
-  
-  /* Fade-in Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
